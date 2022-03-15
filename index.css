@@ -1,0 +1,451 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+
+@font-face {
+    font-family: "voyage";
+    font-weight: 500;
+    src: url(./fonts/VOYAGE-REGULAR.TTF);
+}
+
+@font-face {
+    font-family: "voyage";
+    font-weight: 600;
+    src: url(./fonts/VOYAGE-BOLD.TTF);
+}
+
+@font-face {
+    font-family: "gilroy";
+    font-weight: 600;
+    src: url(./fonts/GILROY-BOLD.OTF);
+}
+
+@font-face {
+    font-family: "gilroy";
+    font-weight: 500;
+    src: url(./fonts/GILROY-SEMIBOLD.OTF);
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+
+}
+
+.main{
+    min-height: 100vh;
+    width: 100%;
+    /* background-color: red; */
+    background-color: black;
+    display: flex;
+    /* align-items: center; */
+    position: relative;
+}
+
+.nav{
+    height: 50px;
+    width: 100%;
+    /* background-color: red; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 40px;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+
+}
+
+.left{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    /* justify-content: ; */
+}
+
+.left h3{
+    /* font-family: "gilroy";/ */
+    font-family: voyage;
+    font-weight: 600;
+    text-transform: capitalize;
+    color: white;
+}
+
+.links{
+    margin-left: 90px;
+    width: 66%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.links a{
+    text-decoration: none;
+    color: white;
+    /* font-family: gilroy; */
+    font-family: "voyage";
+    font-weight: 400;
+    text-transform: capitalize;
+    font-size: 14px;
+    position: relative;
+
+}
+
+.icons i{
+    color: white;
+    font-size: 16px;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+#menu{
+    display: none;
+}
+
+.left1{
+    height: 100vh;
+    width: 100%;
+    /* background-color: yellow; */
+}
+
+.right1{
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    /* background-color: purple; */
+}
+
+.right1 img{
+    height: 700px;
+    /* margin-top: 20px; */
+    position: absolute;
+    top: 50%;
+    right: 0%;
+    transform: translate(0% , -50%);
+}
+
+.left1 .text{
+    /* border: 2px solid red; */
+    position: absolute;
+    top: 14%;
+    left: 5%;
+    color: white;
+}
+
+.text h1{
+    color: white;
+    font-family: "voyage";
+    font-size: 80px;
+    font-weight: 500;
+    /* text-transform: capitalize; */
+    z-index: 99;
+    opacity: 0;
+
+}
+
+
+
+.text p{
+    font-family: "gilroy";
+    font-weight: 400;
+    /* text-transform: capitalize; */
+    font-size: 13px;
+    margin-top: 30px;
+    line-height: 26px;
+}
+
+.buttons{
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    
+}
+
+.btn{
+    padding: 8px 30px;
+    background-color: white;
+    font-family: "gilroy";
+    font-weight: 500;
+    text-transform: capitalize;
+    color: #DCB832;
+    display: flex;
+    /* align-items: center; */
+    border-radius: 100px;
+    margin-left: 50px;
+    border: none;
+    cursor: pointer;
+  
+}
+
+.btn span{
+    margin-left: 6px;
+}
+
+.buttons h3{
+  
+    font-family: "gilroy";
+    font-weight: 500;
+    text-transform: capitalize;
+}
+
+#new{
+    font-family: "gilroy";
+    font-weight: 600;
+    text-transform: capitalize;
+    color: white;
+    font-size: 26px;
+    margin-top: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 42%;
+}
+
+#new span{
+    height: 2px;
+    width: 100px;
+    background-color: white;
+    display: block;
+}
+
+.collection{
+    margin-top: 40px;
+}
+.images{
+    height: 50px;
+}
+
+.top1{
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 40px;
+}
+
+
+.one{
+    display: flex;
+    /* align-items: center; */
+    flex-direction: column;
+    align-items: center;
+}
+
+.one h3{
+    font-family: "gilroy";
+    font-weight: 500;
+    text-transform: capitalize;
+    color: white;
+    margin-top: 40px;
+}
+
+.slider{
+    color: white;
+    position: absolute;
+    bottom: 6%;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 16%;
+}
+
+.slider h3{
+    font-family: "gilroy";
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 1.2px;
+    color: white;
+}
+
+.top2{
+    text-align: center;
+}
+
+.top2 i{
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.btm2{
+    text-align: center;    
+}
+
+.btm2 i{
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.btn{
+    padding-top: 10px;
+    align-items: center;
+    color: #DCB832;
+}
+.btn a{
+    height: 20px;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    position: relative;
+    transition: all cubic-bezier(0.19, 1, 0.22, 1) .8s;
+    overflow: hidden;
+    color: #DCB832;
+}
+
+.rd{
+    height: 20px;
+    /* background-color: green; */
+    text-transform: capitalize;
+    color: black;
+    color: #DCB832;
+    transform-origin: right center;
+    transition: all cubic-bezier(0.19, 1, 0.22, 1) .8s;
+}
+
+
+.btn a::before{
+    content: "Add To Cart";
+    position: absolute;
+    top: 100%;
+    transform-origin: left center;
+    transform: rotate(20deg);
+    transition: all cubic-bezier(0.19, 1, 0.22, 1) .8s;
+    color: black;
+    color: #DCB832;
+}
+
+.btn a:hover .rd{
+    transform: translateY(-20px) rotate(20deg);
+    
+}
+
+.btn a:hover::before{
+    
+    transform: translateY(-20px) rotate(0);
+}
+
+
+#cart{
+    display: block;
+    height: 26px;
+    width: 26px;
+    border-radius: 100px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #DCB832;
+}
+
+.icons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+@media(max-width:500px){
+    .main{
+        flex-direction: column;
+    }
+
+    .left1{
+        height: 50vh;
+    }
+
+    .right1{
+        height: 50vh;
+    }
+
+    .nav{
+        padding: 0px 24px;
+    }
+
+    .links{
+        display: none;
+    }
+
+    .left h3{
+        font-size: 12px;
+        font-weight: 500;
+    }
+    .icons i{
+        margin-right: 0px;
+        font-size: 14px;
+        margin-left: 20px;
+    }
+    #menu{
+        display: initial;
+        /* font-size: 20px; */
+    }
+
+    .text h1{
+        font-size: 36px;
+    }
+
+    .text p{
+        margin-top: 28spx;
+        font-size: 6px;
+        line-height: 16px;
+        /* color: blue; */
+        color: white;
+    }
+    .buttons{
+        margin-top: 36px;
+    }
+
+    .buttons h3{
+        font-size: 14px;
+       
+    }
+
+    .right1 img{
+        height: 250px;
+        left: 50%;
+        top: -15%;
+        transform: translate(-50%,0) scale(2);
+        transition: all cubic,cubic-bezier(0.19, 1, 0.22, 1) 2s;
+    }
+
+    #new{
+        font-size: 20px;
+        width: 70%;
+        margin-top: 30px;
+        display: none;
+    }
+
+    .collection {
+        margin-top: 330px;
+    }
+
+    .top1{
+        width: 100%;
+    }
+
+    .slider{
+        width: 80%;
+        bottom: 50%;
+    }
+
+}
+
+
+
+.links a::before{
+    content: "";
+    height: 2px;
+    width: 0%;
+    background-color: #DCB832;
+    position: absolute;
+    bottom: -30%;
+    border-radius: 100px;
+    transition: all cubic-bezier(0.455, 0.03, 0.515, 0.955) .6s;
+}
+
+.links a:hover::before{
+    width: 100%;
+}
+
